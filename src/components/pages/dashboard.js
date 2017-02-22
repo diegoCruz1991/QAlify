@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import NavBar from './navbar';
+import NavBar from '../navbar';
 import { connect } from 'react-redux';
-import { fetchConfiguration } from '../actions/index';
+import { fetchConfiguration } from '../../actions/index';
 import { bindActionCreators } from 'redux';
-import PageContainer from './page_container'
+import PageContainer from '../page_container'
 
-class App extends Component {
+class Dashboard extends Component {
 	constructor(props) {
     super(props);
 
@@ -36,4 +36,4 @@ function mapDispatchToProps(dispatch) {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

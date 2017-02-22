@@ -12,16 +12,16 @@ class Sidebar extends Component {
 	    <div className="collapse navbar-collapse navbar-ex1-collapse">
 	      <ul className="nav navbar-nav side-nav">
 			    <li>
-			   		<Link to="/home" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-dashboard"></i>Dashboard</Link>
+			   		<Link to="/dashboard" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-dashboard"></i>Dashboard</Link>
 			    </li>
 			    <li>
-			      <Link to="/home" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-file-text-o"></i> Test Plans</Link>
+			      <Link to="/plans" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-file-text-o"></i> Test Plans</Link>
 			    </li>
 			    <li>
-			      <Link to="/home" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-tasks"></i> Jobs</Link>
+			      <Link to="/jobs" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-tasks"></i> Jobs</Link>
 			    </li>
 			    <li>
-			      <Link to="/home" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-suitcase"></i> Suites</Link>
+			      <Link to="/suites" onlyActiveOnIndex={true} activeClassName="active"><i className="fa fa-fw fa-suitcase"></i> Suites</Link>
 			    </li>
 			  </ul>
 	    </div>

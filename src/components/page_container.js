@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { connect } from 'react-redux';
 
 class PageContainer extends Component {
 	constructor(props) {
@@ -14,11 +13,11 @@ class PageContainer extends Component {
           
           <div className="row">
             <div className="col-lg-12">
-              <h1 className="page-header">Blank Page <small>Subheading</small>
+              <h1 className="page-header">{this.props.pageName}<small> {this.props.pageSubName}</small>
               </h1>
               <ol className="breadcrumb">
                 <li>
-                  <i className="fa fa-dashboard"></i>  <Link to="/home">{this.props.configuration.proyect.name}</Link>
+                  <i className="fa fa-dashboard"></i>  <Link to="/home">Dashboard</Link>
                 </li>
                 <li className="active">
                   <i className="fa fa-file"></i> Blank Page
@@ -33,8 +32,4 @@ class PageContainer extends Component {
   }
 }
 
-function mapStateToProps({configuration}) {
-  return { configuration };
-}
-
-export default connect(mapStateToProps)(PageContainer);
+export default PageContainer;
